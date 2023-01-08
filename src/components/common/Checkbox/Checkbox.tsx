@@ -6,10 +6,14 @@ interface CheckboxProps {
   value: string;
 }
 
-export const Checkbox: FC<CheckboxProps> = ({checked, id, value}) =>
-  <React.Fragment>
-    <input type='checkbox' checked={checked} id={id.toString()} value={value}/>
-    <label htmlFor={id.toString()}>
-      {value}
-    </label>
-  </React.Fragment>
+export const Checkbox: FC<CheckboxProps> = ({checked, id, value}) => {
+  return (
+    <React.Fragment>
+      <input type='checkbox' checked={checked} id={id.toString()} value={value}/>
+      <label htmlFor={id.toString()}>
+        {value}
+      </label>
+    </React.Fragment>
+  );
+}
+
