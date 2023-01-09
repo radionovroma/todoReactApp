@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import css from './styles.module.css';
 
 interface CheckboxProps {
   checked: boolean;
@@ -9,8 +10,8 @@ interface CheckboxProps {
 export const Checkbox: FC<CheckboxProps> = ({checked, id, value}) => {
   return (
     <React.Fragment>
-      <input type='checkbox' checked={checked} id={id.toString()} value={value}/>
-      <label htmlFor={id.toString()}>
+      <input className={css.checkbox} type='checkbox' checked={checked} id={id.toString()} value={value}/>
+      <label className={css.label} htmlFor={id.toString()}>
         {value}
       </label>
     </React.Fragment>
