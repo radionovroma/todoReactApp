@@ -1,0 +1,39 @@
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 25px;
+    color: green;
+    background-color: white;
+    cursor: pointer;
+}
+
+.submit:hover{
+    border: none;
+    color: white;
+    background-color: green;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 25px;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+}
+
+.delete:hover{
+    border-color: white;
+    color: white;
+    background-color: red;
+}
